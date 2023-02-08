@@ -1,18 +1,37 @@
+
+
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+
+ @font-face {
+    font-family: 'MinstrelPoster';
+    src: 
+         url('/fonts/Minstrel-Poster-NF.woff2') format('woff2'),
+         url('/fonts/Minstrel-Poster-NF.woff') format('woff'),
+         url('/fonts/Minstrel-Poster-NF.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'MinstrelPoster2';
+    src: 
+         url('/fonts/Minstrel-Poster-Two-NF.woff2') format('woff2'),
+         url('/fonts/Minstrel-Poster-Two-NF.woff') format('woff'),
+         url('/fonts/Minstrel-Poster-Two-NF.ttf')  format('truetype');
+}
+
 body {
-	font-family: Verdana, sans-serif;
+	font-family: 'MinstrelPoster', sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #1E2040;
+	background-color: #1e2040;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 1.5;
+	line-height: 1.6;
 	color: #bd8ebf;
 }
 h1,
