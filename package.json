@@ -11,9 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.6",
     "@astrojs/mdx": "^0.16.0",
     "@astrojs/rss": "^2.1.0",
-    "@astrojs/sitemap": "^1.0.1"
+    "@astrojs/sitemap": "^1.0.1",
+    "astro": "^2.0.10"
+  },
+  "devDependencies": {
+    "@vite-pwa/astro": "^0.0.1",
+    "rollup": "^3.15.0"
+  },
+  "peerDependencies": {
+    "rollup": ">=2"
   }
 }
