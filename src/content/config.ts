@@ -23,6 +23,7 @@ const projects = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
+		longDescription: z.string().optional(),
 		// Transform string to Date object
 		pubDate: z
 			.string()
@@ -33,6 +34,10 @@ const projects = defineCollection({
 			.optional()
 			.transform((str) => (str ? new Date(str) : undefined)),
 		heroImage: z.string().optional(),
+		videoUrl: z.string().optional(),
+		thumbnail: z.string().optional(),
+		tags: z.array(z.string()),
+		genres: z.array(z.string()).optional(),
 	}),
 });
 

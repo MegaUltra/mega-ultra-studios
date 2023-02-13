@@ -30,7 +30,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			<article>
 				{heroImage && <img width={720} height={360} src={heroImage} alt="cover image" />}
 				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
+				{pubDate && <h3>Release Date: <time>{pubDate.toLocaleDateString('en-us', {
+					year: 'numeric',
+					month: 'short',
+					day: 'numeric',
+				})}</time></h3>}
 				{
 					updatedDate && (
 						<div>

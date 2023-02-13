@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Mega Ultra Studios';
 export const SITE_DESCRIPTION = 'Mega Ultra Studios creates narrative and promotional videos for everyone.';
+export const SITE_IMAGE = '/splash.jpg';

@@ -1,7 +1,7 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
+// import '../styles/global.css';
 
 export interface Props {
 	title: string;
@@ -21,7 +21,8 @@ const { title, description, image = '/splash.jpg' } = Astro.props;
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#1E2040">
+<meta name="msapplication-TileColor" content="#1e2040">
+<meta name="theme-color" content="#1e2040">
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
