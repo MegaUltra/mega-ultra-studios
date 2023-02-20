@@ -11,16 +11,25 @@ const { bgImage = '/splash.jpg' } = Astro.props;
 ---
 
 <header>
-	<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-		<a href="/" class="flex title-font font-medium items-center text-white mb-4 md:mb-0"><img class="mx-3 w-48" src={logo} alt="Mega Ultra Studios logo" /></a>
-	<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-		
+	<nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+	<div class="flex items-center flex-no-shrink text-white mr-6">
+		<a href="/" class="flex items-center"><img class="mx-3 w-48" src={logo} alt="Mega Ultra Studios logo" /></a>
+	</div>
+	<div class="block lg:hidden">
+		<button class="flex items-center px-3 py-2 border rounded text-white border-blue-400 hover:text-blue hover:border-yellow-400">
+			<svg class="h-3 w-3 fill-white hover:fill-blue-400" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+		  </button>
+		</div>
+		<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blorg</HeaderLink>
 		<HeaderLink href="/projects">Projects</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
 		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
 		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+		<div>
+			<a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue hover:bg-yellow-300 mt-4 lg:mt-0">Download</a>
+		  </div>
+	</div>
 	</nav>
-</div>
 </header>
