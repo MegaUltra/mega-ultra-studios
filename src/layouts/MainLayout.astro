@@ -1,5 +1,5 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
+import '../styles/layout.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
@@ -52,10 +52,10 @@ const { title = 'Mega Ultra Studios', description = 'Mega Ultra Studios creates 
 
 	</head>
 
-	<body class="bg-[#1e2040] text-white">
+	<body class="bg-[#1e2040] text-white grid place-items-center h-screen content-center">
 		<Header />
 		<main>
-			<h1>{title}</h1>
+			<h1 class="font-['MinstrelPoster2'] text-2xl">{title}</h1>
 		<slot />
 		</main>
 		<Footer />

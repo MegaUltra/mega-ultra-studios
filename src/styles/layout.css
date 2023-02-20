@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MinstrelPoster';
+    src: 
+         url('/fonts/Minstrel-Poster-NF.woff2') format('woff2'),
+         url('/fonts/Minstrel-Poster-NF.woff') format('woff'),
+         url('/fonts/Minstrel-Poster-NF.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'MinstrelPoster2';
+    src: 
+         url('/fonts/Minstrel-Poster-Two-NF.woff2') format('woff2'),
+         url('/fonts/Minstrel-Poster-Two-NF.woff') format('woff'),
+         url('/fonts/Minstrel-Poster-Two-NF.ttf')  format('truetype');
+} 
+
+@layer base {
+
+}

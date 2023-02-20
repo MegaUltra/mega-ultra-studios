@@ -11,16 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.16.0",
-    "@astrojs/rss": "^2.1.0",
+    "@astrojs/mdx": "^0.17.0",
+    "@astrojs/rss": "^2.1.1",
     "@astrojs/sitemap": "^1.0.1",
     "@astrojs/tailwind": "^3.0.1",
-    "astro": "^2.0.10",
-    "tailwindcss": "^3.2.6"
+    "astro": "^2.0.14",
+    "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
-    "@vite-pwa/astro": "^0.0.1",
-    "rollup": "^3.15.0"
+    "@vite-pwa/astro": "^0.0.3",
+    "rollup": "^3.17.1"
   },
   "peerDependencies": {
     "rollup": ">=2"
